@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horloge en temps réel - Djemara AMICY</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page-projet">
+
+  <header>
+    <div class="logo">Djemara AMICY</div>
+    <nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <ul id="navMenu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="../index.html#projets" class="btn btn-secondary">← Retour au portfolio</a>
+  </header>
+
+  <main class="projet-container">
+    <h1>Horloge en temps réel</h1>
+    <p class="projet-intro">Affichage de l'heure en direct avec analyseur de dates, développé en JavaScript.</p>
+
+    <div class="horloge-affichage" id="horloge">00:00:00</div>
+    <p id="date-fr" style="text-align:center; margin-bottom: 40px; color: #B0B0B0;"></p>
+
+    <h2 style="font-size: 1.3rem; margin-bottom: 15px;">Analyse de date (JJ-MM-AAAA)</h2>
+    <div class="projet-form">
+      <div class="form-group">
+        <label for="saisie-date">Entrez une date</label>
+        <input type="text" id="saisie-date" placeholder="Ex: 25-12-2026" maxlength="10">
+      </div>
+      <button id="btn-calculer" class="btn btn-primary">Calculer la différence</button>
+
+      <div class="date-analyse" style="margin-top: 20px;">
+        <p><strong>Date affichée :</strong> <span id="affichage-date">-</span></p>
+        <p><strong>Différence avec aujourd'hui :</strong> <span id="zone-difference">-</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-name">Djemara AMICY</p>
+    <p class="footer-copy">© 2026 Djemara AMICY. Eco-designed for low energy consumption.</p>
+  </footer>
+
+  <script src="horloge.js" defer></script>
+</body>
+</html>

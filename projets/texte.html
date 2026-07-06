@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyseur de texte - Djemara AMICY</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page-projet">
+
+  <header>
+    <div class="logo">Djemara AMICY</div>
+    <nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <ul id="navMenu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="../index.html#projets" class="btn btn-secondary">← Retour au portfolio</a>
+  </header>
+
+  <main class="projet-container">
+    <h1>Analyseur de texte</h1>
+    <p class="projet-intro">Analyse en temps réel d'un texte saisi : nombre de mots, longueur, mise en majuscule.</p>
+
+    <div class="projet-form">
+      <div class="form-group">
+        <label for="mon-texte">Entrez une phrase</label>
+        <textarea id="mon-texte" placeholder="Tapez votre texte ici..."></textarea>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <span class="stat-value" id="longueur">0</span>
+        <span class="stat-label">Caractères</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="nb-mots">0</span>
+        <span class="stat-label">Mots</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="sous-chaine">-</span>
+        <span class="stat-label">3 premiers caractères</span>
+      </div>
+    </div>
+
+    <div class="date-analyse" style="margin-top: 20px;">
+      <p><strong>Version en majuscules :</strong></p>
+      <p id="majuscule">-</p>
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-name">Djemara AMICY</p>
+    <p class="footer-copy">© 2026 Djemara AMICY. Eco-designed for low energy consumption.</p>
+  </footer>
+
+  <script src="texte.js" defer></script>
+</body>
+</html>

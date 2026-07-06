@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur de prêt - Djemara AMICY</title>
+  <link rel="stylesheet" href="../css/style.css">
+ 
+</head>
+<body class="page-projet">
+
+  <header>
+    <div class="logo">Djemara AMICY</div>
+    <nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <ul id="navMenu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="../index.html#projets" class="btn btn-secondary">← Retour au portfolio</a>
+  </header>
+
+  <main class="projet-container">
+    <h1>Calculateur de prêt</h1>
+    <p class="projet-intro">Outil qui calcule les mensualités d'un prêt à partir du capital, du taux et de la durée.</p>
+
+    <div class="projet-form">
+      <div class="form-group">
+        <label for="montant">Montant du prêt (€)</label>
+        <input type="number" id="montant" step="any" placeholder="Ex: 50000">
+      </div>
+
+      <div class="form-group">
+        <label for="taux">Taux annuel (%)</label>
+        <input type="number" id="taux" step="any" placeholder="Ex: 3.5">
+      </div>
+
+      <div class="form-group">
+        <label for="duree">Durée (en années)</label>
+        <input type="number" id="duree" placeholder="Ex: 15">
+      </div>
+
+      <button id="btn-calculer" class="btn btn-primary">Calculer</button>
+
+      <div id="zone-erreur" class="error-message" role="alert" aria-live="polite"></div>
+
+      <div id="zone-resultat" class="resultat-box">
+        <p><strong>Paiement mensuel :</strong> <span id="mensualite">0.00</span> €</p>
+        <p><strong>Coût total du prêt :</strong> <span id="cout-total">0.00</span> €</p>
+        <p><strong>Total des intérêts :</strong> <span id="total-interets">0.00</span> €</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-name">Djemara AMICY</p>
+    <p class="footer-copy">© 2026 Djemara AMICY. Eco-designed for low energy consumption.</p>
+  </footer>
+
+  <script src="pret.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Djemara AMICY - Développeuse Front-end</title>
+  <meta name="description" content="Portfolio de Djemara AMICY, développeuse front-end. HTML, CSS, JavaScript, accessibilité et écoconception.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <div class="logo">Djemara AMICY</div>
+    <nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <ul id="navMenu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+  
+<section id="accueil" class="hero">
+  <div class="hero-text-block">
+    <p class="eyebrow"></p>
+    <h1>Djemara AMICY, Développeur Front-end</h1>
+    <p class="hero-text">
+      Conception d'interfaces numériques performantes, accessibles et sobres.
+      Une approche minimaliste centrée sur l'utilisateur et l'éco-conception.
+    </p>
+    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+  </div>
+  <div class="hero-photo">
+    <img src="assets/images/photo-profil3.png" alt="Photo de Djemara AMICY">
+  </div>
+</section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section">
+      <p class="section-number"></p>
+      <h2>À propos</h2>
+      <div class="apropos-content">
+         <div class="photo-placeholder">
+          <img src="assets/images/photo-profil3.png" alt="Photo de Djemara AMICY">
+        </div>
+        <p>
+          Je m'appelle Djemara AMICY, etudiante  en science informatique,développeuse front-end en devenir. Depuis plus d'un an,
+          je me forme au développement web avec une attention particulière portée
+          au code propre, à l'accessibilité et à l'écoconception numérique.
+          J'aime transformer une idée en interface simple, rapide et agréable à utiliser.
+        </p>
+        
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="section">
+      <p class="section-number"></p>
+      <h2>Compétences</h2>
+      <ul class="skills-list">
+        <li>HTML5 sémantique</li>
+        <li>CSS3 (Flexbox / Grid)</li>
+        <li>JavaScript</li>
+        <li>Responsive design</li>
+        <li>Accessibilité web (a11y)</li>
+        <li>Écoconception</li>
+      </ul>
+      <p class="skills-secondary">Autres compétences : Python, Java, C, MariaDB</p>
+    </section>
+
+    <!-- PROJETS -->
+    
+<section id="projets" class="section">
+  <p class="section-number"></p>
+  <h2>Mes Projets</h2>
+  <div class="projects-grid">
+    <article class="project-card">
+      <div class="project-image">
+        <img src="assets/images/projet-horloge.png" alt="Aperçu du projet Horloge en temps réel">
+      </div>
+      <h3>Horloge en temps réel</h3>
+      <p>Affichage de l'heure en direct avec analyseur de dates, développé en JavaScript.</p>
+      <a href="projets/horloge.html" class="btn btn-secondary">Voir</a>
+    </article>
+    <article class="project-card">
+      <div class="project-image">
+        <img src="assets/images/projet-pret.png" alt="Aperçu du projet Calculateur de prêt">
+      </div>
+      <h3>Calculateur de prêt</h3>
+      <p>Outil qui calcule les mensualités d'un prêt à partir du capital, du taux et de la durée.</p>
+      <a href="projets/pret.html" class="btn btn-secondary">Voir</a>
+    </article>
+    <article class="project-card">
+      <div class="project-image">
+        <img src="assets/images/projet-texte.png" alt="Aperçu du projet Analyseur de texte">
+      </div>
+      <h3>Analyseur de texte</h3>
+      <p>Analyse en temps réel d'un texte saisi : nombre de mots, longueur, mise en majuscule.</p>
+      <a href="projets/texte.html" class="btn btn-secondary">Voir</a>
+    </article>
+  </div>
+</section>
+<!-- CONTACT -->
+    <section id="contact" class="section">
+      <p class="section-number"></p>
+      <h2>Collaborons ensemble</h2>
+      <p>Vous avez un projet en tête ou souhaitez simplement échanger ? N'hésitez pas à me laisser un message.</p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom"  placeholder="votre nom complet">
+          <span class="error-message" id="erreurNom"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="exemple@gmail.com"  required>
+          <span class="error-message" id="erreurEmail"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="votre message...." required></textarea>
+          <span class="error-message" id="erreurMessage"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <p class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+
+<footer>
+  <p class="footer-name">Djemara AMICY</p>
+  <p class="footer-copy">© 2026 Djemara AMICY. Eco-designed for low energy consumption.</p>
+  <div class="footer-links">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Twitter</a>
+  </div>
+  <a href="#accueil" class="back-to-top">↑ Retour en haut</a>
+</footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
